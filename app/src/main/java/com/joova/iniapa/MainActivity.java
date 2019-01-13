@@ -1,12 +1,17 @@
 package com.joova.iniapa;
 
+import android.content.Intent;
+import android.speech.RecognizerIntent;
 import android.speech.tts.TextToSpeech;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import java.util.List;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
@@ -42,11 +47,40 @@ public class MainActivity extends AppCompatActivity {
 
     public void mulaiBaca(View view) {
         CharSequence nama = txtNama.getText();
-        tts.speak(nama, TextToSpeech.QUEUE_FLUSH, null, null);
+        bicara(nama);
 
     }
 
+    public void bicara(CharSequence kata) {
+        tts.speak(kata, TextToSpeech.QUEUE_FLUSH, null, null);
+    }
+
     public void mulaiTirukan(View view) {
+        Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
+        intent.putExtra(RecognizerIntent.EXTRA_PROMPT, "Ayo tirukan!");
+
+        startActivityForResult(intent, 3000);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == 3000) {
+            if (resultCode == RESULT_OK) {
+                List<String> results = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
+                String tirukan = results.get(0);
+                CharSequence nama = txtNama.getText();
+
+                if(tirukan.equalsIgnoreCase(nama.toString())){
+                    bicara("Anda benar");
+                } else {
+                    bicara("Kurang Tepat, Ulangi lagi");
+                }
+
+            }
+        }
     }
 
     @Override
