@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         listNama.add("Bebek");
         listNama.add("Cicak");
         listNama.add("Durian");
-        listNama.add("Eskrim");
+        listNama.add("Es krim");
 
         // set nama & gambar pertama di load
         txtNama.setText(listNama.get(index));
@@ -105,6 +105,10 @@ public class MainActivity extends AppCompatActivity {
                 if(tirukan.equalsIgnoreCase(nama.toString())){
                     bicara("Anda benar");
                     index++;
+                    if(index >= listImage.size()-1){
+                        bicara("selamat, semua jawaban anda Benar");
+                        index = 0;
+                    }
                     gambarBerikutnya();
                 } else {
                     bicara("Kurang Tepat, Ulangi lagi");
