@@ -8,9 +8,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 
@@ -18,7 +21,13 @@ public class MainActivity extends AppCompatActivity {
     final static String TAG = "MainActivity";
 
     private TextToSpeech tts;
-    TextView txtNama;
+    private TextView txtNama;
+    private ImageView imgGambar;
+
+    private int index = 0;
+
+    private List<Integer> listImage = new ArrayList<Integer>();
+    private List<String> listNama = new ArrayList<String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +35,26 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         txtNama = findViewById(R.id.txtNama);
+        imgGambar = findViewById(R.id.imgGambar);
+
+
+        //load image ke array
+        listImage.add(R.drawable.apel);
+        listImage.add(R.drawable.bebek);
+        listImage.add(R.drawable.cicak);
+        listImage.add(R.drawable.durian);
+        listImage.add(R.drawable.eskrim);
+
+        // load nama ke array
+        listNama.add("Apel");
+        listNama.add("Bebek");
+        listNama.add("Cicak");
+        listNama.add("Durian");
+        listNama.add("Eskrim");
+
+        // set nama & gambar pertama di load
+        txtNama.setText(listNama.get(index));
+        imgGambar.setImageResource(listImage.get(index));
 
         tts = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
             @Override
@@ -75,12 +104,19 @@ public class MainActivity extends AppCompatActivity {
 
                 if(tirukan.equalsIgnoreCase(nama.toString())){
                     bicara("Anda benar");
+                    index++;
+                    gambarBerikutnya();
                 } else {
                     bicara("Kurang Tepat, Ulangi lagi");
                 }
 
             }
         }
+    }
+
+    void gambarBerikutnya(){
+        txtNama.setText(listNama.get(index));
+        imgGambar.setImageResource(listImage.get(index));
     }
 
     @Override
