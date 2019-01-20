@@ -57,8 +57,8 @@ public class MainActivity extends AppCompatActivity {
         listImage.add(R.drawable.obat);
 
         // load nama ke array
-        listNama.add("Apel");
-        listNama.add("Bebek");
+        listNama.add(getString(R.string.apel));
+        listNama.add(getString(R.string.bebek));
         listNama.add("Cicak");
         listNama.add("Durian");
         listNama.add("Es krim");

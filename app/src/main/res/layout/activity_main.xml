@@ -35,14 +35,14 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Baca"
+            android:text="@string/baca"
             android:onClick="mulaiBaca"/>
         <Button
             android:id="@+id/btnTiru"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Tirukan"
+            android:text="@string/tirukan"
             android:onClick="mulaiTirukan"/>
     </LinearLayout>
 
