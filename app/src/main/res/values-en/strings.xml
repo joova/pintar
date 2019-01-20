@@ -4,4 +4,7 @@
     <string name="bebek">Duck</string>
     <string name="tirukan">Speak</string>
     <string name="baca">Read</string>
+    <string name="pesan_bener">you great</string>
+    <string name="pesan_selesai">amazing</string>
+    <string name="pesan_salah">try again</string>
 </resources>

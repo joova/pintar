@@ -4,4 +4,7 @@
     <string name="bebek">Bebek</string>
     <string name="tirukan">Tirukan</string>
     <string name="baca">Baca</string>
+    <string name="pesan_bener">Kamu Pintar</string>
+    <string name="pesan_selesai">Wow, Kamu hebat!!!</string>
+    <string name="pesan_salah">Kurang Tepat, Jangan menyerah !!!</string>
 </resources>
