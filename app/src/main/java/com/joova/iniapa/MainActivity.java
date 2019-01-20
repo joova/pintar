@@ -132,9 +132,10 @@ public class MainActivity extends AppCompatActivity {
                 CharSequence nama = txtNama.getText();
 
                 if(tirukan.equalsIgnoreCase(nama.toString())){
-                    bicara("Anda benar");
+                    bicara("Kamu Pintar");
                     index++;
-                    if(index >= listImage.size()-1){
+                    Log.d(TAG, "index="+ index);
+                    if(index >= listImage.size()){
                         bicara("selamat, semua jawaban anda Benar");
                         index = 0;
                     }
