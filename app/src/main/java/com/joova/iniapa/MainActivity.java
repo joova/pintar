@@ -50,6 +50,10 @@ public class MainActivity extends AppCompatActivity {
         listImage.add(R.drawable.ikan);
         listImage.add(R.drawable.jam);
         listImage.add(R.drawable.kucing);
+        listImage.add(R.drawable.laut);
+        listImage.add(R.drawable.monyet);
+        listImage.add(R.drawable.nasi);
+        listImage.add(R.drawable.obat);
 
         // load nama ke array
         listNama.add("Apel");
@@ -63,6 +67,10 @@ public class MainActivity extends AppCompatActivity {
         listNama.add("Ikan");
         listNama.add("Jam");
         listNama.add("Kucing");
+        listNama.add("Laut");
+        listNama.add("Monyet");
+        listNama.add("Nasi");
+        listNama.add("Obat");
 
         // set nama & gambar pertama di load
         txtNama.setText(listNama.get(index));
