@@ -1,5 +1,6 @@
 package com.joova.iniapa;
 
+import android.content.Context;
 import android.content.Intent;
 import android.speech.RecognizerIntent;
 import android.speech.tts.TextToSpeech;
@@ -83,11 +84,19 @@ public class MainActivity extends AppCompatActivity {
                     int result = tts.setLanguage(Locale.getDefault());
                     if (result == TextToSpeech.LANG_MISSING_DATA
                             || result == TextToSpeech.LANG_NOT_SUPPORTED ){
-                        Log.e(TAG, "Error TTS Tidak support.");
+                        CharSequence text = "Error TTS Tidak support.";
+                        Log.e(TAG, text.toString());
+                        Context context = getApplicationContext();
+                        Toast toast = Toast.makeText(context, text ,Toast.LENGTH_SHORT);
+                        toast.show();
                     }
 
                 } else {
-                    Log.e(TAG, "Inisialisasi TTS Gagal.");
+                    CharSequence text = "Inisialisasi TTS Gagal.";
+                    Log.e(TAG, text.toString());
+                    Context context = getApplicationContext();
+                    Toast toast = Toast.makeText(context, text ,Toast.LENGTH_SHORT);
+                    toast.show();
                 }
             }
         });
