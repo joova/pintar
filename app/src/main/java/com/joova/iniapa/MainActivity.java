@@ -59,19 +59,19 @@ public class MainActivity extends AppCompatActivity {
         // load nama ke array
         listNama.add(getString(R.string.apel));
         listNama.add(getString(R.string.bebek));
-        listNama.add("Cicak");
-        listNama.add("Durian");
-        listNama.add("Es krim");
-        listNama.add("Film");
-        listNama.add("Gunung");
-        listNama.add("Harimau");
-        listNama.add("Ikan");
-        listNama.add("Jam");
-        listNama.add("Kucing");
-        listNama.add("Laut");
-        listNama.add("Monyet");
-        listNama.add("Nasi");
-        listNama.add("Obat");
+        listNama.add(getString(R.string.cicak));
+        listNama.add(getString(R.string.durian));
+        listNama.add(getString(R.string.eskrim));
+        listNama.add(getString(R.string.film));
+        listNama.add(getString(R.string.gunung));
+        listNama.add(getString(R.string.harimau));
+        listNama.add(getString(R.string.ikan)); 
+        listNama.add(getString(R.string.jam));
+        listNama.add(getString(R.string.kucing));
+        listNama.add(getString(R.string.laut));
+        listNama.add(getString(R.string.monyet));
+        listNama.add(getString(R.string.nasi));
+        listNama.add(getString(R.string.obat));
 
         // set nama & gambar pertama di load
         txtNama.setText(listNama.get(index));

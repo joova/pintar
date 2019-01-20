@@ -4,4 +4,17 @@
     <string name="bebek">Duck</string>
     <string name="tirukan">Speak</string>
     <string name="baca">Read</string>
+    <string name="cicak">Lizard</string>
+    <string name="durian">Durian</string>
+    <string name="eskrim">Ice Cream</string>
+    <string name="film">Film</string>
+    <string name="gunung">Mountain</string>
+    <string name="harimau">Tiger</string>
+    <string name="ikan">Fish</string>
+    <string name="jam">Clock</string>
+    <string name="kucing">Cat</string>
+    <string name="laut">Sea</string>
+    <string name="monyet">Monkey</string>
+    <string name="nasi">Rice</string>
+    <string name="obat">Drug</string>
 </resources>

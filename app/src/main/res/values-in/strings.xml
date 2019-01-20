@@ -4,4 +4,17 @@
     <string name="bebek">Bebek</string>
     <string name="tirukan">Tirukan</string>
     <string name="baca">Baca</string>
+    <string name="cicak">Cicak</string>
+    <string name="durian">Durian</string>
+    <string name="eskrim">Es krim</string>
+    <string name="film">Film</string>
+    <string name="gunung">Gunung</string>
+    <string name="harimau">Harimau</string>
+    <string name="ikan">Ikan</string>
+    <string name="jam">Jam</string>
+    <string name="kucing">Kucing</string>
+    <string name="laut">Laut</string>
+    <string name="monyet">Monyet</string>
+    <string name="nasi">Nasi</string>
+    <string name="obat">Obat</string>
 </resources>
