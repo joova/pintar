@@ -44,6 +44,12 @@ public class MainActivity extends AppCompatActivity {
         listImage.add(R.drawable.cicak);
         listImage.add(R.drawable.durian);
         listImage.add(R.drawable.eskrim);
+        listImage.add(R.drawable.film);
+        listImage.add(R.drawable.gunung);
+        listImage.add(R.drawable.harimau);
+        listImage.add(R.drawable.ikan);
+        listImage.add(R.drawable.jam);
+        listImage.add(R.drawable.kucing);
 
         // load nama ke array
         listNama.add("Apel");
@@ -51,6 +57,12 @@ public class MainActivity extends AppCompatActivity {
         listNama.add("Cicak");
         listNama.add("Durian");
         listNama.add("Es krim");
+        listNama.add("Film");
+        listNama.add("Gunung");
+        listNama.add("Harimau");
+        listNama.add("Ikan");
+        listNama.add("Jam");
+        listNama.add("Kucing");
 
         // set nama & gambar pertama di load
         txtNama.setText(listNama.get(index));
