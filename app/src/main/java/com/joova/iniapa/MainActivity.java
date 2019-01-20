@@ -132,16 +132,16 @@ public class MainActivity extends AppCompatActivity {
                 CharSequence nama = txtNama.getText();
 
                 if(tirukan.equalsIgnoreCase(nama.toString())){
-                    bicara("Kamu Pintar");
+                    bicara(getString(R.string.pesan_bener));
                     index++;
                     Log.d(TAG, "index="+ index);
                     if(index >= listImage.size()){
-                        bicara("Wow, Kamu hebat!!!");
+                        bicara(getString(R.string.pesan_selesai));
                         index = 0;
                     }
                     gambarBerikutnya();
                 } else {
-                    bicara("Kurang Tepat, Jangan menyerah !!!");
+                    bicara(getString(R.string.pesan_salah));
                 }
 
             }

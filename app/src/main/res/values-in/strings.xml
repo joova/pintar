@@ -17,4 +17,7 @@
     <string name="monyet">Monyet</string>
     <string name="nasi">Nasi</string>
     <string name="obat">Obat</string>
+    <string name="pesan_bener">Kamu Pintar</string>
+    <string name="pesan_selesai">Wow, Kamu hebat!!!</string>
+    <string name="pesan_salah">Kurang Tepat, Jangan menyerah !!!</string>
 </resources>

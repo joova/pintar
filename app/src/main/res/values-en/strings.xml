@@ -17,4 +17,7 @@
     <string name="monyet">Monkey</string>
     <string name="nasi">Rice</string>
     <string name="obat">Drug</string>
+    <string name="pesan_bener">you great</string>
+    <string name="pesan_selesai">amazing</string>
+    <string name="pesan_salah">try again</string>
 </resources>
