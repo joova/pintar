@@ -136,12 +136,12 @@ public class MainActivity extends AppCompatActivity {
                     index++;
                     Log.d(TAG, "index="+ index);
                     if(index >= listImage.size()){
-                        bicara("selamat, semua jawaban anda Benar");
+                        bicara("Wow, Kamu hebat!!!");
                         index = 0;
                     }
                     gambarBerikutnya();
                 } else {
-                    bicara("Kurang Tepat, Ulangi lagi");
+                    bicara("Kurang Tepat, Jangan menyerah !!!");
                 }
 
             }
